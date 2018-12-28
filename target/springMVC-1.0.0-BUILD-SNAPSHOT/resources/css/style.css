@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* 게시판 리스트 목록 */
+.bbs, .bbs th, .bbs td {
+	border:0
+}
+
+.bbs a {
+	color: #383838;
+	text-decoration: none
+}
+
+.bbs {
+	width: 80%;
+	border-bottom: 1px solid #999;
+	color: #666;
+	font-size: 12px;
+	table-layout: fixed
+}	
+
+.bbs caption {
+	display: none
+}
+
+.bbs th {
+	padding: 5px 0 6px;	
+	border-top: solid 1px #999;
+	border-bottom: solid 1px #b2b2b2;
+	background-color: #CEFBC9;
+	color: #333;
+	font-weight: bold;	
+	line-height: 20px;
+	vertical-align: top
+}
+
+.bbs td {
+	padding: 8px 0 9px;
+	border-bottom: solid 1px #d2d2d2;
+	text-align: center;
+	line-height: 18px
+}
+
+.bbs .date, .bbs .hit .idx {
+	padding: 0;
+	font-family: Tahoma;
+	font-size: 11px;
+	line-height: normal
+}
+
+.bbs .title {
+	text-align: left;
+	padding-left: 15px;	
+	font-size: 13px;
+}
+		
+.bbs .title .pic, .bbs .title .new {
+	margin: 0 0 2px;
+	vertical-align: middle
+}
+
+.bbs tr.reply .title a {
+	padding-left: 16px;
+	background: url() 0 1px no-repeat
+}
+
+/* 게시글 작성 버튼 */
+#writeBtn {		
+	background-color: #F6F6F6;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
