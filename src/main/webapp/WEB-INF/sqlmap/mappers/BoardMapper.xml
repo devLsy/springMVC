@@ -51,4 +51,11 @@
 		WHERE idx = #{idx}
 	</update>
 	
+	<!-- 조회수 증가 -->
+	<update id="updateHit" parameterType="int">
+		UPDATE board
+				SET hit = hit + 1
+		WHERE idx = #{idx}
+	</update>
+	
 </mapper>

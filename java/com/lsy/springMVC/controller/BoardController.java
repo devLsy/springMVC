@@ -37,8 +37,11 @@ public class BoardController {
 	// 게시글 상세조회
 	@RequestMapping(value= "/getBoardView.do", method=RequestMethod.GET)
 	public ModelAndView getBoardView(@RequestParam("idx") int idx) {
-		ModelAndView mv = new ModelAndView("jsp/view");
+		ModelAndView mv = new ModelAndView("jsp/view");	
+		//조회수 증가
+		boardService.updateHit(idx);
 		BoardVO board = boardService.getBoardView(idx); 
+		
 		mv.addObject("board", board);
 		logger.info("BoardController-getBoardView() completed.");
 		return mv;
