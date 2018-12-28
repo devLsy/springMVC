@@ -8,6 +8,6 @@
 * 검색-조회, 제목 클릭 했을 경우 상세보기 페이지, 삭제, 수정 구현 해야함
 * 20181228 14:37 간단한 CRUD까지만 구현된 상태
 
-* 참조 블로그: http://blog.jin3260.com/38?category=586873
-              https://doublesprogramming.tistory.com/95
+* 참조 블로그: http://blog.jin3260.com/38?category=586873<br/>
+              https://doublesprogramming.tistory.com/95<br/>
 
