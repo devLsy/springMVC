@@ -1,7 +1,11 @@
 # SpringMVC Project
 ## 20181227 SpringMVC + mybatis + MariaDB 게시판 작성시작
 ## devInfo: 
-* jdk: 
+* Spring Tol Suite: 3.9.6 RELEASE 
+* jdk: 1.8.0_92
+* springframework: 5.1.2.RELEASE
+* mybatis: 3.4.6
+* mariadb-java-client: 2.3.0
 ----------------------------------------------------------------------------------------------------------------------------
 * 개인 스터디 용도로 만드는거라 아주 간단한 CRUD부터 간단하게 시작..
 <div>
