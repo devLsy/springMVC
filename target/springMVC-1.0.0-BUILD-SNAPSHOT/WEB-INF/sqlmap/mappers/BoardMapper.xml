@@ -16,7 +16,7 @@
 	<select id="getBoardList" resultMap="boardMap">
 		SELECT
 				idx, title, content, id, hit, date
-		FROM board
+		FROM board ORDER BY date DESC
 	</select>
 	
 	<!-- 내용 상세보기 -->
@@ -34,5 +34,28 @@
 		VALUES(#{idx}, #{title}, #{content}, #{id})
 	</insert>
 	
+	<!-- 게시글 삭제 -->
+	<delete id="deleteBoard" parameterType="int">
+		DELETE 
+				FROM board
+		WHERE idx = #{idx}	
+	</delete>
+	
+	<!-- 게시글 수정-->
+	<update id="updateBoard" parameterType="board">
+		UPDATE board
+		<set>
+				<if test="title != null and title != '' ">TITLE = #{title},</if>
+				<if test="content != null and content != '' ">CONTENT = #{content}</if> 
+		</set>
+		WHERE idx = #{idx}
+	</update>
+	
+	<!-- 조회수 증가 -->
+	<update id="updateHit" parameterType="int">
+		UPDATE board
+				SET hit = hit + 1
+		WHERE idx = #{idx}
+	</update>
 	
 </mapper>

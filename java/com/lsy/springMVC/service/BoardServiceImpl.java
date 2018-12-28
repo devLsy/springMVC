@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.lsy.springMVC.mapper.BoardMapper;
 import com.lsy.springMVC.vo.BoardVO;
-
+// BoardService interface의 추상메서드 구현 class
 @Service("boardService")
 public class BoardServiceImpl implements BoardService{
 
