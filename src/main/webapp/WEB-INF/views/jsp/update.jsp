@@ -29,7 +29,7 @@
 			</tr>
 			<tr>
 				<td><button>글수정</button></td>
-				<td><button type="button" onClick="boardList();">글목록</button></td>
+				<td><button type="button" onClick="location.href='getBoardList.do'">글목록</button></td>
 			</tr>
 		</table>
 	</form:form>

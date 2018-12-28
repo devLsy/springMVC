@@ -12,7 +12,7 @@
 <body>
 <h2>게시글 목록</h2>
 </body>
-	<input type="button" id="writeBtn" value="글작성" onClick="writeGo();">	
+	<input type="button" id="writeBtn" value="글작성" onClick="location.href='insertBoardForm.do'">	
 	<table class="bbs" style="width:500px"; border="1px solid black" cellspacing="0">
 			<caption>게시판 리스트</caption>
 			<colgroup>

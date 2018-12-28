@@ -6,17 +6,6 @@ $(document).ready(function() {
 	console.log("page loaded");
 	writeBoard();
 });	
-// 글쓰기페이지로 이동
-function writeGo() {
-	$(location).attr('href','insertBoardForm.do');
-	console.log("게시글 작성페이지로 이동");
-}
-
-// 게시글 목록 조회
-function boardList() {
-	$(location).attr('href','getBoardList.do');
-	console.log("게시글 목록으로 이동");
-}
 
 // 글작성
 function writeBoard() {	

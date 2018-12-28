@@ -30,7 +30,7 @@
 				</tr>
 				<tr>
 					<td><button id="btnSave">작성</button></td>	
-					<td><input type="button" id="boardListBtn" value="글목록" onClick="boardList();"></td>
+					<td><button type="button" onClick="location.href='getBoardList.do'">글목록</button></td>
 				</tr>
 			</table>	
 		</form>

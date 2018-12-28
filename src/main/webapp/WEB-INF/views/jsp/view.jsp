@@ -44,7 +44,7 @@
 							<tr>
 								<td><button type="button" onClick="location.href='updateBoardFoprm.do?idx=${board.idx}'">글수정</button></td>
 								<td><button type="button" onClick="location.href='deleteBoard.do?idx=${board.idx}'">글삭제</button></td>
-								<td><button type="button" onClick="boardList();">글목록</button></td>
+								<td><button type="button" onClick="location.href='getBoardList.do'">글목록</button></td>
 							</tr>	
 					</table>
 			</tr>
