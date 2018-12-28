@@ -1,6 +1,8 @@
 # SpringMVC Project
 ## 20181227 SpringMVC + mybatis + MariaDB 게시판 작성시작
-
+## devInfo: 
+* jdk: 
+----------------------------------------------------------------------------------------------------------------------------
 * 개인 스터디 용도로 만드는거라 아주 간단한 CRUD부터 간단하게 시작..
 <div>
 <img src="https://user-images.githubusercontent.com/44331989/50150424-4b9de380-0301-11e9-9e79-41e6595fe8ba.png" width="200"> </div>
