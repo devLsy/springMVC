@@ -1,7 +1,7 @@
 # SpringMVC Project
 ## 20181227 SpringMVC + mybatis + MariaDB 게시판 작성시작
 ## devInfo: 
-* Spring Tol Suite: 3.9.6 RELEASE 
+* Spring Tool Suite: 3.9.6 RELEASE 
 * jdk: 1.8.0_92
 * springframework: 5.1.2.RELEASE
 * mybatis: 3.4.6
