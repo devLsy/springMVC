@@ -9,15 +9,16 @@
 <meta charset="UTF-8">
 <title>Spring게시판 게시글 목록</title>
 </head>
-<body>20181229 14:41 test
+<body>
 <h2>게시글 목록</h2>
 </body>
 	<input type="button" id="writeBtn" value="글작성" onClick="location.href='insertBoardForm.do'">	
+	<input type="button" id="registerBtn" value="로그인" onClick="'">
 	<table class="bbs" style="width:500px"; border="1px solid black" cellspacing="0">
 			<caption>게시판 리스트</caption>
 			<colgroup>
 				<col width="100">
-				<col>
+				<col>	
 				<col width="110">
 				<col width="100">
 				<col width="80">	

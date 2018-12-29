@@ -28,7 +28,7 @@ public class BoardController {
 	@RequestMapping(value = "/getBoardList.do")
 	public ModelAndView getBoardList() {
 		List<BoardVO> list = boardService.getBoardList();
-		ModelAndView mv = new ModelAndView("jsp/list");
+		ModelAndView mv = new ModelAndView("jsp/board/list");
 		mv.addObject("list", list);
 		logger.info("BoardController-getBoardList() completed.");
 		return mv;
@@ -37,7 +37,7 @@ public class BoardController {
 	// 게시글 상세조회
 	@RequestMapping(value= "/getBoardView.do", method=RequestMethod.GET)
 	public ModelAndView getBoardView(@RequestParam("idx") int idx) {
-		ModelAndView mv = new ModelAndView("jsp/view");	
+		ModelAndView mv = new ModelAndView("jsp/board/view");	
 		//조회수 증가
 		boardService.updateHit(idx);
 		BoardVO board = boardService.getBoardView(idx); 
@@ -51,7 +51,7 @@ public class BoardController {
 	@RequestMapping(value= "/insertBoardForm.do")
 	public String insertBoardForm(@ModelAttribute("boardVO") BoardVO boardVO) {
 		logger.info("BoardController-insertBoardForm() completed.");
-		return "jsp/insertForm";
+		return "jsp/board/insertForm";
 	}
 	
 	// 게시글 등록 프로세스 
@@ -71,7 +71,7 @@ public class BoardController {
 	// 게시글 수정 폼
 	@RequestMapping(value = "/updateBoardFoprm.do", method= {RequestMethod.POST, RequestMethod.GET})
 	public ModelAndView updateBoardFoprm(@RequestParam(value="idx")int idx, @ModelAttribute("boardVO") BoardVO boardVO) {
-		ModelAndView mv = new ModelAndView("/jsp/update");
+		ModelAndView mv = new ModelAndView("/jsp/board/update");
 		BoardVO board = boardService.getBoardView(idx);
 		mv.addObject("boardVO", board);
 		logger.info("BoardController-updateBoardForm() completed.");
