@@ -9,7 +9,7 @@
 <meta charset="UTF-8">
 <title>Spring게시판 게시글 목록</title>
 </head>
-<body>
+<body>20181229 14:41 test
 <h2>게시글 목록</h2>
 </body>
 	<input type="button" id="writeBtn" value="글작성" onClick="location.href='insertBoardForm.do'">	
@@ -41,6 +41,6 @@
 							<td class="hit">${list.hit}</td>						
 						</tr>
 				</c:forEach>
-			</tbody>	
+			</tbody>		
 	</table>
 </html>
