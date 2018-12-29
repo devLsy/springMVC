@@ -9,5 +9,7 @@
 	</settings>
 	<typeAliases>
 			<typeAlias alias="board" type="com.lsy.springMVC.vo.BoardVO"/>
+			<typeAlias alias="member" type="com.lsy.springMVC.vo.MemberVO"/>
 	</typeAliases>
+	
 </configuration>

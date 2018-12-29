@@ -13,11 +13,9 @@
 	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
 		<constructor-arg ref="sqlSessionFactory" />
 	</bean> 
-	<!-- mybatis mapper auto scanning -->
+	<!-- mybatis mapper auto scanning(게시판)-->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="com.lsy.springMVC.mapper" />
 	</bean>
-
-
 
 </beans>

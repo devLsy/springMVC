@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 회원 관련 -->
+<mapper namespace="com.lsy.springMVC.mapper.MemberMapper">
+
+	<resultMap id="memberMap" type="com.lsy.springMVC.vo.MemberVO">
+		<result property="id" column="id" />
+		<result property="email" column="email" />
+		<result property="name" column="name" />
+		<result property="password" column="password" />
+		<result property="mobile" column="mobile" />
+	</resultMap>
+	
+	<!-- 회원 목록 조회 -->
+	<select id="getMemberList" resultMap="memberMap">
+		SELECT
+				id, email, name, password, mobile
+		FROM member ORDER BY id DESC
+	</select>
+	
+</mapper>		

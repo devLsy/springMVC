@@ -61,10 +61,15 @@
 	padding-left: 16px;
 	background: url() 0 1px no-repeat
 }
-
+	
 /* 게시글 작성 버튼 */
 #writeBtn {		
+		background-color: #F6F6F6;
+		margin-bottom: 5px;
+	margin-left: 5px;	
+}
+/* 로그인 버튼 */
+#registerBtn {
 	background-color: #F6F6F6;
-	margin-bottom: 5px;
-	margin-left: 5px;
+	margin-left: 360px;
 }
