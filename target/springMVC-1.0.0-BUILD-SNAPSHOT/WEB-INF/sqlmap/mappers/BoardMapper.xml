@@ -58,9 +58,5 @@
 				SET hit = hit + 1
 		WHERE idx = #{idx}
 	</update>
-	
-	<!-- 회원등록 -->
-	<insert id="insertMember">
 		
-	</insert>
 </mapper>

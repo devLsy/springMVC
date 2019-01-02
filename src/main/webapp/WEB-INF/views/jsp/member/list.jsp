@@ -14,4 +14,4 @@
 이메일: ${list.email}
 </c:forEach>
 </body>
-</html>		
+</html>				
