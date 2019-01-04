@@ -10,19 +10,19 @@
 }
 
 .bbs {
-	width: 80%;
-	border-bottom: 1px solid #999;
+	width: 90%;
+	border-bottom: 1px solid #999;	
 	color: #666;
 	font-size: 12px;
 	table-layout: fixed
 }	
-
+	
 .bbs caption {
 	display: none
 }
 
 .bbs th {
-	padding: 5px 0 6px;	
+	padding: 5px 0 6px;		
 	border-top: solid 1px #999;
 	border-bottom: solid 1px #b2b2b2;
 	background-color: #CEFBC9;

@@ -12,11 +12,23 @@
 		<result property="mobile" column="mobile" />
 	</resultMap>
 	
-	<!-- 회원 목록 조회 -->
-	<select id="getMemberList" resultMap="memberMap">
-		SELECT
-				id, email, name, password, mobile
-		FROM member ORDER BY id DESC
+	<!-- 로그인 체크 -->
+	<select id="loginCheck" resultType="String">
+		SELECT 
+				name
+		FROM member
+		WHERE id = #{id} AND password = #{password}
 	</select>
+	
+	<!-- 로그인한 사용자 정보 -->		
+	<select id="viewMember" resultType="com.lsy.springMVC.vo.MemberVO">
+		SELECT
+				name,
+				id,
+				email,
+				regdate
+		FROM member	
+		WHERE id = #{id} AND password = #{password}
+	</select>	
 	
 </mapper>		

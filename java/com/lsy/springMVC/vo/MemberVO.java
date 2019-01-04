@@ -1,5 +1,7 @@
 package com.lsy.springMVC.vo;
 
+import java.sql.Date;
+
 public class MemberVO {
 
 	private String id;
@@ -7,6 +9,15 @@ public class MemberVO {
 	private String name;
 	private String password;
 	private String mobile;
+	private Date regDate;
+
+	public Date getRegDate() {
+		return regDate;
+	}
+
+	public void setRegDate(Date regDate) {
+		this.regDate = regDate;
+	}
 
 	public String getId() {
 		return id;
@@ -46,5 +57,10 @@ public class MemberVO {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	
+	@Override
+	public String toString() {
+		return "MemberVO [id=" + id + ", password=" + password + ", name=" + name +", email= " + email + ", regDate=" + regDate;
 	}
 }

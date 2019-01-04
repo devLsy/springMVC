@@ -1,10 +1,11 @@
 package com.lsy.springMVC.service;
 
-import java.util.List;
+import javax.servlet.http.HttpSession;
 
 import com.lsy.springMVC.vo.MemberVO;
 
 public interface MemberService {
 
-	public List<MemberVO> getMemberList();		// 회원목록 조회
+	public boolean loginCheck(MemberVO memberVO, HttpSession session); // 회원 로그인 체크
+	public MemberVO viewMember(MemberVO memberVO);	// 회원 로그인 정보
 }
